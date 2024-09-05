@@ -1,0 +1,224 @@
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A2E1BB;
+    height: 9.6rem;
+    padding: 0 4.8rem;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: white;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    transform-origin: 0 0;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background:transparent;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: transparent;
+    transform: scaleY(1);}
+
+.dropdown:hover .dropdown-content {display: block;
+    transform: scaleY(1);}
+
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+.logo {
+    height: 7.2rem;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+.main-nav-link{
+    transition: all 0.5s;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+    color:#11F16B;
+;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #729C83;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+    background-color:#11F16B;
+}
+.butlog{
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    text-decoration:none;
+}
+.butlog:hover,
+.butlog:active {
+    transform: scale(.95);
+    background: transparent;
+}
+
+.butlog:focus {
+    outline: none;
+}
+
+.intro-img {
+    width: 100%;
+}
+
+.intro-description {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 4.8rem;
+}
+
+.intro {
+    max-width: 130rem;
+    margin: 0 auto;
+    padding:0 3.2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 9.6rem;
+}
+
+.section-intro {
+    background-color: #A2E1BB;
+    padding: 0 0 5.6rem 0;
+}
+
+.section-how {
+    padding:9.6rem;
+    background: white;
+}
+.step-img{
+    width: 35%;
+}
+.step-img-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.step-img-box::before,
+.step-img-box::after{
+    content: "";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.step-img-box::before{
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #A2E1BB;
+    opacity: .3;
+    z-index: 2;
+
+}
+
+.step-img-box::after{
+    width: 45%;
+    padding-bottom: 45%;
+    background-color: #A2E1BB;
+    z-index: -1;
+
+}
+
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+
+
+.tooltip {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+.tooltip:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 1%;
+    top: 30%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: white;
+    font-size: 10px; /* Размер текста подсказки */
+    padding: 2px 2px; /* Поля */
+    border: 1px solid #333;
+    margin: 13px;
+    color: black;
+}
+.footer-heading{
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+    color: #363535;
+}
+.avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.avatar1 {
+    margin-top:20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+
+
+

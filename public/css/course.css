@@ -1,0 +1,90 @@
+summary {
+    display: block;
+    font-size: 30px;
+    padding: 20px;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary::before {
+    content: '\25B6';
+    padding-right: 0.5em;
+}
+
+details[open] > summary::before {
+    content: '\25BC';
+}
+.list{
+    margin: 10px;
+    font-size: 20px;
+    padding-bottom: 70px;
+    background: white;
+}
+.vv{
+    list-style-type: none;
+}
+.list-grid{
+    display: flex;
+    flex-direction: column;
+}
+.qq{
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-top: 5px;
+}
+
+.logo_course{
+    width: 160px;
+    height: auto;
+}
+
+.theory{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+    text-align: justify;
+    background: white;
+    padding: 10px 40px 30px 5px;
+    color: black;
+    line-height: 30px;
+}
+
+.areatext{
+    font-size: 1.6rem;
+    width:1000px;
+    height:500px;
+}
+.areadesc{
+    font-size: 1.6rem;
+    width:1000px;
+    height:25px;
+}
+.areatext{
+    font-size: 1.6rem;
+    width:1000px;
+    height:500px;
+}
+.areadel{
+    font-size: 1.6rem;
+    width:500px;
+    height:25px;
+    resize:none;
+}
+.areadef{
+    font-size: 1.6rem;
+    width:300px;
+    height:40px;
+    resize:none;
+}
+.dell{
+    display: none;
+}
+.knop{
+    padding: 5px 5px;
+}
